@@ -1,2 +1,6 @@
 FROM apache/airflow:2.6.1
-USER root
+
+USER airflow
+
+RUN python -m pip install pandas
+RUN python -m pip install faker
